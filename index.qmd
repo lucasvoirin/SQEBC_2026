@@ -1,19 +1,20 @@
 ---
-title: "Developing acoustic localization for wildlife in environmental impact assessment"
+title: "Suivi du comportement de la faune à l'aide de la localisation acoustique"
 author: "**Lucas Voirin**, André Desrochers, Marc J. Mazerolle"
 bibliography: references.bib
 format:
   revealjs:
     theme: theme.scss
     css: custom.css
-    footer: "[lucasvoirin.github.io/PERG_2026](https://lucasvoirin.github.io/PERG_2026)"
+    footer: "[lucasvoirin.github.io/CEF_2026](https://lucasvoirin.github.io/CEF_2026)"
     logo: favicon-32x32.png
     pdf-separate-fragments: true
+    embed-resources: true
 ---
 
-# Assessing impacts
+# Évaluer des impacts
 
-## Challenges
+## Les enjeux
 
 ::: r-stack
 ![](slides/eie_01.png){.fragment .fade-in-then-out fig-align="center"}
@@ -26,7 +27,7 @@ format:
 
 :::
 
-## Behavior
+## Le comportement
 
 
 ::: r-stack
@@ -44,7 +45,7 @@ format:
 @Mennill_et_al_2006, @Dutilleux_et_al_2023, @Teixeira_et_al_2019
 :::
 
-## Passive acoustic monitoring
+## Le suivi acoustique passif
 
 ::: r-stack
 ![](slides/pam_01.png){.fragment .fade-in-then-out fig-align="center"}
@@ -63,9 +64,9 @@ format:
 :::
 
 
-# Localizing sounds
+# Localiser des sons
 
-## On the field
+## Sur le terrain
 
 ::: r-stack
 ![](slides/field_01.png){.fragment .fade-in-then-out fig-align="center"}
@@ -80,58 +81,58 @@ format:
 @Rhinehart_et_al_2020
 :::
 
-## Objectives
+## Objectifs
 
 <br>
 
 ::: {.fragment}
-Localize with precision animal sounds
+Localiser précisément des sons d'animaux
 :::
 
 <br>
 
 ::: {.fragment}
-Account for uncertainties in:
+Prendre en compte les incertitudes dans:
 
-- Recorders positions
-- Time delay estimations 
+- La position des enregistreurs
+- Les estimations de délais de temps d'arrivée
 :::
 
 
 
-## At the lab
+## Différences de temps d'arrivée
 
 ::: r-stack
-![](slides/lab_01.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_1.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_02.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_2.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_03.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_3.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_04.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_4.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_05.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_5.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_06.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_6.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_07.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_7.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_08.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_8.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_09.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_9.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_10.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_10.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_11.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_11.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_12.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_12.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_13.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_13.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/lab_14.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/tdoa_14.png){.fragment .fade-in-then-out fig-align="center"}
 :::
 
-## Sound source localization
+## Localisation de source sonore
 
 
 ::: r-stack
@@ -146,7 +147,7 @@ Account for uncertainties in:
 ![](figures/loc_22.png){.fragment fig-align="center" width=80%}
 :::
 
-## Assessing precision
+## Évaluer la précision
 
 ::: r-stack
 
@@ -156,7 +157,7 @@ Account for uncertainties in:
 
 :::
 
-## Localizing recorders
+## Localiser les enregistreurs
 
 ::: r-stack
 
@@ -173,10 +174,10 @@ Account for uncertainties in:
 :::
 
 
-# Mapping behaviors
+# Cartographier les comportements
 
 
-## Objectives {.smaller}
+## Objectifs {.smaller}
 
 
 ::: columns
@@ -187,14 +188,14 @@ Account for uncertainties in:
 
 
 <span style="color:green;">{{<fa check size=2x >}}</span>
- Localize with precision animal sounds
+ Localiser des sons avec précision
 
 <br>
 
-Account for uncertainties in:
+Prendre en compte les incertitudes:
 
-- <span style="color:green;">{{<fa check size=2x >}}</span> Recorders positions
-- <span style="color:green;">{{<fa check size=2x >}}</span> Time delay estimations 
+- <span style="color:green;">{{<fa check size=2x >}}</span> Positions des enregistreurs
+- <span style="color:green;">{{<fa check size=2x >}}</span> Estimation des délais de temps d'arrivée
 
 :::
 
@@ -206,14 +207,8 @@ Account for uncertainties in:
 
 :::
 
-## Linking sounds to landscape
 
-![](figures/drone.jpeg){fig-align="center" width=30%}
-
-
-
-
-# Thank you!{.smaller}
+# Merci!{.smaller}
 
 ::: columns
 
@@ -223,7 +218,7 @@ Account for uncertainties in:
 <br>
 <br>
 
-This work has been funded by
+Ce travail a été financé par
 <br>
 <br>
 <br>
@@ -253,5 +248,5 @@ This work has been funded by
 :::
 
 
-# References
+# Références
 
