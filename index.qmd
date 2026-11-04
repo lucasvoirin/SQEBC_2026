@@ -1,51 +1,18 @@
 ---
-title: "Suivi du comportement de la faune à l'aide de la localisation acoustique"
+title: "Acoustic localization of birds with synchronized recorder arrays"
 author: "**Lucas Voirin**, André Desrochers, Marc J. Mazerolle"
 bibliography: references.bib
 format:
   revealjs:
     theme: theme.scss
     css: custom.css
-    footer: "[lucasvoirin.github.io/CEF_2026](https://lucasvoirin.github.io/CEF_2026)"
+    footer: "[lucasvoirin.github.io/SQEBC_2026](https://lucasvoirin.github.io/SQEBC_2026)"
     logo: favicon-32x32.png
     pdf-separate-fragments: true
     embed-resources: true
 ---
 
-# Évaluer des impacts
-
-## Les enjeux
-
-::: r-stack
-![](slides/eie_01.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/eie_02.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/eie_03.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/eie_04.png){.fragment .fade-in-then-out fig-align="center"}
-
-:::
-
-## Le comportement
-
-
-::: r-stack
-![](slides/behav_01.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/behav_02.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/behav_03.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/behav_04.png){.fragment .fade-in-then-out fig-align="center"}
-
-:::
-
-::: aside
-@Mennill_et_al_2006, @Dutilleux_et_al_2023, @Teixeira_et_al_2019
-:::
-
-## Le suivi acoustique passif
+## Passive acoustic monitoring
 
 ::: r-stack
 ![](slides/pam_01.png){.fragment .fade-in-then-out fig-align="center"}
@@ -58,157 +25,82 @@ format:
 
 :::
 
-
 ::: aside
  @Gibb_et_al_2019, @Sugai_et_al_2019
 :::
 
 
-# Localiser des sons
-
-## Sur le terrain
+## Acoustic localization
 
 ::: r-stack
-![](slides/field_01.png){.fragment .fade-in-then-out fig-align="center"}
 
-![](slides/field_02.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/loc_01.png){.fragment .fade-in-then-out fig-align="center" height=600}
 
-![](slides/field_03.png){.fragment .fade-in-then-out fig-align="center"}
+![](slides/loc_02.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_03.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_04.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_05.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_06.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_07.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_08.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_09.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_10.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_11.png){.fragment .fade-in-then-out fig-align="center" height=600}
+
+![](slides/loc_12.png){.fragment .fade-in-then-out fig-align="center" height=600}
 
 :::
 
-::: aside
-@Rhinehart_et_al_2020
-:::
+## Field setup
 
-## Objectifs
+![](figures/field_setup.png){fig-align="center" height=600}
+
+
+## Data pipeline
+
 
 <br>
 
-::: {.fragment}
-Localiser précisément des sons d'animaux
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.callout-note appearance="simple" icon=false}
+### 1. Detect
+![](figures/HawkEars-Logo_Horiz_Descriptor_Full-Colour.png){fig-align="center" height=140}
+:::
 :::
 
-<br>
-
-::: {.fragment}
-Prendre en compte les incertitudes dans:
-
-- La position des enregistreurs
-- Les estimations de délais de temps d'arrivée
+::: {.column width="50%"}
+::: {.callout-note appearance="simple" icon=false}
+### 2. Localize
+![](figures/lps.png){fig-align="center" height=140}
+:::
 :::
 
+::::
 
 
-## Différences de temps d'arrivée
-
-::: r-stack
-![](slides/tdoa_1.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_2.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_3.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_4.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_5.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_6.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_7.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_8.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_9.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_10.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_11.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_12.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_13.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](slides/tdoa_14.png){.fragment .fade-in-then-out fig-align="center"}
-:::
-
-## Localisation de source sonore
 
 
-::: r-stack
-![](figures/loc_01.png){.fragment fig-align="center" width=80%}
+## Results
 
-![](figures/loc_02.png){.fragment fig-align="center" width=80%}
+![](figures/sm_peat2_20250521_090000.mp4){fig-align="center" height=600}
 
-![](figures/loc_03.png){.fragment fig-align="center" width=80%}
-
-![](figures/loc_21.png){.fragment fig-align="center" width=80%}
-
-![](figures/loc_22.png){.fragment fig-align="center" width=80%}
-:::
-
-## Évaluer la précision
-
-::: r-stack
-
-![](figures/err_01.png){.fragment fig-align="center" width=80%}
-
-![](figures/err_02.png){.fragment fig-align="center" width=80%}
-
-:::
-
-## Localiser les enregistreurs
-
-::: r-stack
-
-![](figures/loc_03.png){.fragment .fade-in-then-out fig-align="center" width=80%}
-
-![](slides/array_2.png){.fragment .fade-in-then-out fig-align="center"}
-
-![](figures/loc_03.png){.fragment .fade-in-then-out fig-align="center" width=80%}
-
-![](figures/loc_11.png){.fragment .fade-in-then-out fig-align="center" width=80%}
-
-![](figures/loc_12.png){.fragment .fade-in-then-out fig-align="center" width=80%}
-
-:::
+## Future analyses
 
 
-# Cartographier les comportements
 
 
-## Objectifs {.smaller}
-
-
-::: columns
-
-::: column
-
-<br>
-
-
-<span style="color:green;">{{<fa check size=2x >}}</span>
- Localiser des sons avec précision
-
-<br>
-
-Prendre en compte les incertitudes:
-
-- <span style="color:green;">{{<fa check size=2x >}}</span> Positions des enregistreurs
-- <span style="color:green;">{{<fa check size=2x >}}</span> Estimation des délais de temps d'arrivée
-
-:::
-
-::: column
-
-![](figures/loc_04.png){.fragment .fade-in-then-out fig-align="center" width=80%}
-
-:::
-
-:::
-
-
-# Merci!{.smaller}
+# Thanks!{.smaller}
 
 ::: columns
 
@@ -218,7 +110,7 @@ Prendre en compte les incertitudes:
 <br>
 <br>
 
-Ce travail a été financé par
+This work has been funded by
 <br>
 <br>
 <br>
@@ -248,5 +140,5 @@ Ce travail a été financé par
 :::
 
 
-# Références
+# References
 
