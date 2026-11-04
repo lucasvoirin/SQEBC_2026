@@ -15,6 +15,7 @@ format:
 ## Passive acoustic monitoring
 
 ::: r-stack
+
 ![](slides/pam_01.png){.fragment .fade-in-then-out fig-align="center"}
 
 ![](slides/pam_02.png){.fragment .fade-in-then-out fig-align="center"}
@@ -95,8 +96,23 @@ format:
 
 ![](figures/sm_peat2_20250521_090000.mp4){fig-align="center" height=600}
 
-## Future analyses
+## Point process modeling
 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](figures/heatmap.png){fig-align="center" height=600}
+:::
+
+::: {.column width="40%"}
+
+<br>
+
+![](figures/INLA.png){fig-align="center" height=400}
+:::
+
+::::
 
 
 
