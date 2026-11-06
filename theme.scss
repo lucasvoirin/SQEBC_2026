@@ -14,3 +14,7 @@ $presentation-title-slide-text-align: left;
 .reveal .quarto-title-author-name {
   font-size: 0.8em;
 }
+
+figure { margin: 0; }
+figure img { display: block; margin: 0 auto; }
+figcaption { font-size: 0.7em; margin: 0; padding: 0; }

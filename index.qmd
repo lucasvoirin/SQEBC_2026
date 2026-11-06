@@ -94,7 +94,25 @@ format:
 
 ## Results
 
+
+:::: {.columns}
+
+::: {.column width="75%"}
 ![](figures/sm_peat2_20250521_090000.mp4){fig-align="center" height=600}
+:::
+
+::: {.column width="25%"}
+
+<br>
+<br>
+
+![[Picture by [Cephas](https://commons.wikimedia.org/wiki/User:Cephas) - Own work, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [Link](https://commons.wikimedia.org/w/index.php?curid=6785567)]{style="font-size: 0.3em;"}](figures/Passerculus_sandwichensis_crop.jpeg){fig-align="center"}
+
+:::
+
+::::
+
+
 
 ## Point process modeling
 
